@@ -32,8 +32,7 @@ public class BookShelfController {
     public String books(Model model){
         logger.info(this.toString());
         model.addAttribute("book", new Book());
-        model.addAttribute("bookIdToRemove", new BookIdToRemove());
-        model.addAttribute("bookList", bookService.getAllBooks());
+        setAttributes(model);
         return "book_shelf";
     }
 
@@ -41,10 +40,9 @@ public class BookShelfController {
     public String saveBook(@Valid Book book, BindingResult bindingResult, Model model){
         if(bindingResult.hasErrors()){
             model.addAttribute("book", book);
-            model.addAttribute("bookIdToRemove", new BookIdToRemove());
-            model.addAttribute("bookList", bookService.getAllBooks());
+            setAttributes(model);
             return "book_shelf";
-        } else{
+        } else {
             bookService.saveBook(book);
             logger.info("current repository size: " + bookService.getAllBooks().size());
             return "redirect:/books/shelf";
@@ -59,8 +57,10 @@ public class BookShelfController {
     @PostMapping("/remove")
     public String removeBook(@Valid BookIdToRemove bookIdToRemove, BindingResult bindingResult, Model model){
         if(bindingResult.hasErrors()){
-            model.addAttribute("book", new Book());
-            model.addAttribute("bookList", bookService.getAllBooks());
+            setAttributesForRemoving(model);
+            model.addAttribute("bookAuthorToRemove", new BookAuthorToRemove());
+            model.addAttribute("bookTitleToRemove", new BookTitleToRemove());
+            model.addAttribute("bookSizeToRemove", new BookSizeToRemove());
             return "book_shelf";
         } else {
             bookService.removeBookById(bookIdToRemove.getId());
@@ -69,21 +69,45 @@ public class BookShelfController {
     }
 
     @PostMapping("/removeByAuthor")
-    public String removeBookByAuthor(@RequestParam(value = "author") String author) {
-        bookService.removeBooksByAuthor(author);
-        return "redirect:/books/shelf";
+    public String removeBookByAuthor(@Valid BookAuthorToRemove bookAuthorToRemove, BindingResult bindingResult, Model model) {
+        if(bindingResult.hasErrors()){
+            setAttributesForRemoving(model);
+            model.addAttribute("bookIdToRemove", new BookIdToRemove());
+            model.addAttribute("bookTitleToRemove", new BookTitleToRemove());
+            model.addAttribute("bookSizeToRemove", new BookSizeToRemove());
+            return "book_shelf";
+        } else {
+            bookService.removeBooksByAuthor(bookAuthorToRemove.getAuthor());
+            return "redirect:/books/shelf";
+        }
     }
 
     @PostMapping("/removeByTitle")
-    public String removeBookByTitle(@RequestParam(value = "title") String title) {
-        bookService.removeBooksByTitle(title);
-        return "redirect:/books/shelf";
+    public String removeBookByTitle(@Valid BookTitleToRemove bookTitleToRemove, BindingResult bindingResult, Model model) {
+        if(bindingResult.hasErrors()){
+            setAttributesForRemoving(model);
+            model.addAttribute("bookIdToRemove", new BookIdToRemove());
+            model.addAttribute("bookAuthorToRemove", new BookAuthorToRemove());
+            model.addAttribute("bookSizeToRemove", new BookSizeToRemove());
+            return "book_shelf";
+        } else {
+            bookService.removeBooksByTitle(bookTitleToRemove.getTitle());
+            return "redirect:/books/shelf";
+        }
     }
 
     @PostMapping("/removeBySize")
-    public String removeBookBySize(@RequestParam(value = "title") Integer size) {
-        bookService.removeBooksBySize(size);
-        return "redirect:/books/shelf";
+    public String removeBookBySize(@Valid BookSizeToRemove bookSizeToRemove, BindingResult bindingResult, Model model) {
+        if(bindingResult.hasErrors()){
+            setAttributesForRemoving(model);
+            model.addAttribute("bookIdToRemove", new BookIdToRemove());
+            model.addAttribute("bookAuthorToRemove", new BookAuthorToRemove());
+            model.addAttribute("bookTitleToRemove", new BookTitleToRemove());
+            return "book_shelf";
+        } else {
+            bookService.removeBooksBySize(bookSizeToRemove.getSize());
+            return "redirect:/books/shelf";
+        }
     }
 
     @PostMapping("/uploadFile")
@@ -116,4 +140,16 @@ public class BookShelfController {
         return "errors/500";
     }
 
+    private void setAttributes(Model model){
+        model.addAttribute("bookList", bookService.getAllBooks());
+        model.addAttribute("bookIdToRemove", new BookIdToRemove());
+        model.addAttribute("bookAuthorToRemove", new BookAuthorToRemove());
+        model.addAttribute("bookTitleToRemove", new BookTitleToRemove());
+        model.addAttribute("bookSizeToRemove", new BookSizeToRemove());
+    }
+
+    private void setAttributesForRemoving(Model model){
+        model.addAttribute("book", new Book());
+        model.addAttribute("bookList", bookService.getAllBooks());
+    }
 }

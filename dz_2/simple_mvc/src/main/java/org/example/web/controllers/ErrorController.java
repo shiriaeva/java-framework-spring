@@ -15,4 +15,9 @@ public class ErrorController {
         return "errors/404";
     }
 
+    @GetMapping("/500")
+    public String noFileUpload(){
+        return "errors/500";
+    }
+
 }
