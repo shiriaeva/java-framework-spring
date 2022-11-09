@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+<div class="Cards Cards_refresh" th:fragment="pool">
+    <div class="Cards">
+        <div class="Card" th:each="book: ${booksList}">
+            <div class="Card-picture">
+                <a href="#a" th:href="${book.id}">
+                    <img src="/assets/img/content/main/card.jpg" alt="card.jpg"/>
+                </a>
+            </div>
+            <div class="Card-content">
+                <strong class="Card-title">
+                    <a href="#" th:text="${book.title}"></a>
+                </strong>
+                <div class="Card-description" th:text="${book.author}"></div>
+                <div class="Card-cost">
+                    <span class="Card-priceOld" th:text="${book.priceOld}"></span>
+                    <span class="Card-price" th:text="${book.price}"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
