@@ -1,6 +1,7 @@
 package com.example.mybookshopapp.data;
 
-public class Author implements Comparable<Author>{
+public class Author //implements Comparable<Author>
+{
     private Integer id;
     private String first_name;
     private String last_name;
@@ -38,8 +39,8 @@ public class Author implements Comparable<Author>{
         this.last_name = last_name;
     }
 
-    @Override
+    /*@Override
     public int compareTo(Author o) {
         return last_name.compareTo(o.last_name);
-    }
+    }*/
 }

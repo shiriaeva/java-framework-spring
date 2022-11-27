@@ -18,6 +18,7 @@ public class GenreService {
         this.jdbcTemplate = jdbcTemplate;
     }
 
+
     public List<Genre> getGenresData() {
         List<Genre> genres = jdbcTemplate.query("SELECT * FROM genres", (ResultSet rs, int rowNum) -> {
             Genre genre = new Genre();
