@@ -1,0 +1,193 @@
+
+<!--END-->
+<!--END--><!DOCTYPE html><!--[if IE 7]>
+<html class="ie7" lang="ru">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie8" lang="ru">
+<![endif]-->
+<!--[if IE 9]>
+<html class="ie9" lang="ru">
+<![endif]-->
+<!--[if gt IE 9]><!--> <html lang="ru" xmlns:th="http://www.thymeleaf.org">  <!--<![endif]-->
+<head th:replace="~{fragments/head_fragment :: head_fragment}">
+</head>
+<body class="Site">
+  <!--if lt IE 8
+  p.error-browser
+      | Ваш браузер&nbsp;
+      em устарел!&nbsp;
+      a(href="http://browsehappy.com/") Выберите новую версию
+          +s
+          | браузера здесь&nbsp;
+      | для правильного отображения сайта.
+  -->
+  <header th:replace="~{fragments/header_fragment :: headFragment}"></header>
+  <div class="Middle">
+    <div class="wrap">
+      <main class="Middle-main">
+        <h1 class="Middle-title" th:text="#{topbar.genres}">Жанры
+        </h1>
+        <div class="Section">
+          <div class="Tags Tags_genres">
+            <div class="Tags Tags_embed">
+              <div class="Tags-title">
+                <div class="Tag"><a href="#">Лёгкое чтение<span class="undefined-amount">(15638)</span></a>
+                </div>
+              </div>
+              <div class="Tag"><a href="#">Фантастика<span class="undefined-amount">(44333)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Боевики<span class="undefined-amount">(158)</span></a>
+              </div>
+              <div class="Tags">
+                <div class="Tags-title">
+                  <div class="Tag"><a href="#">Детективы<span class="undefined-amount">(10)</span></a>
+                  </div>
+                </div>
+                <div class="Tag"><a href="#">Триллер<span class="undefined-amount">(134)</span></a>
+                </div>
+                <div class="Tag"><a href="#">Крутой детектив<span class="undefined-amount">(934)</span></a>
+                </div>
+                <div class="Tag"><a href="#">Иронический детектив<span class="undefined-amount">(143443)</span></a>
+                </div>
+                <div class="Tag"><a href="#">Про маньяков<span class="undefined-amount">(3331)</span></a>
+                </div>
+                <div class="Tag"><a href="#">Шпионский детектив<span class="undefined-amount">(94)</span></a>
+                </div>
+                <div class="Tag"><a href="#">Криминальный детектив<span class="undefined-amount">(4839)</span></a>
+                </div>
+                <div class="Tag"><a href="#">Классический детектив<span class="undefined-amount">(4488)</span></a>
+                </div>
+                <div class="Tag"><a href="#">Политический детектив<span class="undefined-amount">(1)</span></a>
+                </div>
+              </div>
+              <div class="Tag"><a href="#">Фэнтези<span class="undefined-amount">(14338)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Романы<span class="undefined-amount">(1438)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Ужасы<span class="undefined-amount">(156)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Приключения<span class="undefined-amount">(1538)</span></a>
+              </div>
+            </div>
+            <div class="Tags">
+              <div class="Tags-title">
+                <div class="Tag"><a href="#">Серьёзное чтение<span class="undefined-amount">(18)</span></a>
+                </div>
+              </div>
+              <div class="Tag"><a href="#">Биографии<span class="undefined-amount">(18)</span></a>
+              </div>
+            </div>
+            <div class="Tags">
+              <div class="Tags-title">
+                <div class="Tag"><a href="#">Деловая литература<span class="undefined-amount">(158)</span></a>
+                </div>
+              </div>
+              <div class="Tag"><a href="#">Деловая литература<span class="undefined-amount">(138)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Управление экономикой<span class="undefined-amount">(158)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Карьера<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Маркетинг, PR, реклама<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Финансы<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Бизнес-справочники<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Личные финансы<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Менеджмент<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Зарубежная деловая литература<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Личная эффективность<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Тайм-менеджмент<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Малый бизнес<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Продажи<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Стартапы и создание бизнеса<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Корпоративная культура<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Банковское дело<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Логистика<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Недвижимость<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Интернет-бизнес<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Ораторское искусство / риторика<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Привлечение клиентов и лояльность<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Делопроизводство<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Переговоры<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Государственное и муниципальное управление, политическое управление<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">О бизнесе популярно<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Ценные бумаги / инвестиции<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Бухучет / налогообложение / аудит<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Российская практика<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Истории успеха<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Интернет-маркетинг<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Лидерство<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Проектный менеджмент<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Управление качеством<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Финансовый менеджмент<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Управление персоналом<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Бизнес-процессы<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Управление бизнесом<span class="undefined-amount">(15638)</span></a>
+              </div>
+            </div>
+            <div class="Tags">
+              <div class="Tags-title">
+                <div class="Tag"><a href="#">Драматургия<span class="undefined-amount">(15638)</span></a>
+                </div>
+              </div>
+              <div class="Tag"><a href="#">Античная драма<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Комедия<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Сценарий<span class="undefined-amount">(15638)</span></a>
+              </div>
+              <div class="Tag"><a href="#">Драма, пьеса<span class="undefined-amount">(15638)</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <footer th:replace="~{fragments/footer_fragment :: footFragment}"></footer>
+  <script src="/assets/plg/jQuery/jquery-3.5.1.min.js"></script>
+  <!--+menu(-->
+  <!--    'Это раз',-->
+  <!--    'Это два',-->
+  <!--    'Это три'-->
+  <!--)-->
+  <!--br-->
+  <!--br-->
+  <!--+menu._vt-->
+  <!--    +menuItem Это раз-->
+  <!--    +menuItem.-item_danger Это два-->
+  <!--    +menuItem Это три-->
+</body></html>
