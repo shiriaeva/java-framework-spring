@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8e8e71a-6c07-4e67-a3e4-83b7007967cb" name="Changes" comment="" />
+    <list default="true" id="b8e8e71a-6c07-4e67-a3e4-83b7007967cb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/homework5/images/books.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework5/images/page.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework5/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/homework5/readme.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,12 +44,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dz_2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/homework5" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\spring_projects\java-framework-spring\homework5" />
       <recent name="C:\spring_projects\java-framework-spring\dz_2" />
     </key>
   </component>
@@ -68,6 +74,8 @@
       <workItem from="1667956286465" duration="142000" />
       <workItem from="1669553155754" duration="95000" />
       <workItem from="1669554583754" duration="35000" />
+      <workItem from="1670605907603" duration="588000" />
+      <workItem from="1670606855801" duration="299000" />
     </task>
     <servers />
   </component>
