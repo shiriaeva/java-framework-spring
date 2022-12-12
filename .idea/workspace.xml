@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8e8e71a-6c07-4e67-a3e4-83b7007967cb" name="Changes" comment="" />
+    <list default="true" id="b8e8e71a-6c07-4e67-a3e4-83b7007967cb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,6 +77,8 @@
       <workItem from="1669554583754" duration="35000" />
       <workItem from="1670605907603" duration="588000" />
       <workItem from="1670606855801" duration="865000" />
+      <workItem from="1670608742200" duration="178000" />
+      <workItem from="1670609291746" duration="129000" />
     </task>
     <servers />
   </component>
@@ -90,5 +95,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/dz_4/MyBookShopApp/src/main/resources/spring-frontend" />
+    </ignored-roots>
   </component>
 </project>
