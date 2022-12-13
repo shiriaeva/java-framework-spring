@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8e8e71a-6c07-4e67-a3e4-83b7007967cb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,12 +41,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/homework5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring_course_mvc_hibernate_aop" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\spring_projects\java-framework-spring\dop_works\task5" />
       <recent name="C:\spring_projects\java-framework-spring\homework5" />
       <recent name="C:\spring_projects\java-framework-spring\dz_2" />
     </key>
@@ -79,6 +79,8 @@
       <workItem from="1670606855801" duration="865000" />
       <workItem from="1670608742200" duration="178000" />
       <workItem from="1670609291746" duration="129000" />
+      <workItem from="1670873245287" duration="673000" />
+      <workItem from="1670878004243" duration="312000" />
     </task>
     <servers />
   </component>
